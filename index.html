@@ -500,6 +500,18 @@
       </div>
     </div>
 
+
+    <!-- Currently -->
+    <div style="margin-top:32px;padding:14px 20px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;gap:14px;">
+      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(52,211,153,0.2);flex-shrink:0;"></span>
+      <div>
+        <span style="font-family:var(--mono);font-size:10px;color:var(--green);letter-spacing:0.1em;text-transform:uppercase;">Currently</span>
+        <div style="font-size:13px;color:var(--muted);margin-top:2px;">
+          Preparing for <span style="color:var(--text)">UMich ECE</span> · Studying gem5 &amp; Onur Mutlu's computer architecture lectures · Contributing to <span style="color:var(--text)">SiliconMind</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Traits & Interests -->
     <div style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
       <div style="background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px;">
@@ -825,6 +837,7 @@
           <span class="tag">CDC Verification</span>
           <span class="tag">16 nm</span>
         </div>
+        <a href="https://github.com/weiber2002/ACVSD_final" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--accent2);display:inline-flex;align-items:center;gap:5px;margin-top:2px;">⎋ GitHub →</a>
       </div>
 
       <div class="project-card">
@@ -871,6 +884,22 @@
           <span class="tag">SystemVerilog</span>
           <span class="tag">RVC</span>
         </div>
+        <a href="https://github.com/weiber2002/DClab_2024" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--accent2);display:inline-flex;align-items:center;gap:5px;margin-top:2px;">⎋ GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">IC-RTL Benchmark</span>
+          <span class="project-badge badge-green">Open Source</span>
+        </div>
+        <p class="project-desc">A hardware design benchmark built from National IC Contest submissions, used to evaluate LLM-based RTL optimization. Achieved 17% geomean PPA reduction (up to 66% peak) vs. human-expert implementations.</p>
+        <div class="project-highlight">17% geomean PPA reduction · up to 66% peak improvement</div>
+        <div class="project-tags">
+          <span class="tag highlight">Benchmark</span>
+          <span class="tag">RTL</span>
+          <span class="tag">LLM-aided Design</span>
+        </div>
+        <a href="https://github.com/weiber2002/ICRTL" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--accent2);display:inline-flex;align-items:center;gap:5px;margin-top:2px;">⎋ GitHub →</a>
       </div>
 
     </div>
@@ -953,7 +982,46 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Publications -->
+  <section id="publications">
+    <div class="section-header">
+      <span class="section-tag">05.5</span>
+      <h2>Publications</h2>
+      <div class="section-line"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px 24px;">
+        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:8px;">
+          <span style="font-family:var(--mono);font-size:10px;color:var(--green);background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.25);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;">1st Author</span>
+          <div style="font-size:14px;font-weight:600;color:var(--text);line-height:1.4;">EvoEDA: Evolutionary Search for LLM-Based Verilog Generation and Optimization</div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);font-family:var(--mono);margin-bottom:10px;">Wei-Po Hsin et al. · Under Submission</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6;">Proposes an evolutionary multi-agent framework for LLM-based Verilog generation, achieving SOTA accuracy on VerilogEval v2 and significant PPA improvements on the IC-RTL benchmark over human-expert implementations.</div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px 24px;">
+        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:8px;">
+          <span style="font-family:var(--mono);font-size:10px;color:var(--accent2);background:var(--accent-dim);border:1px solid rgba(59,130,246,0.3);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;">Co-author</span>
+          <div style="font-size:14px;font-weight:600;color:var(--text);line-height:1.4;">NeRArch_Sim: A Cycle-Accurate Simulation Framework for Neural Rendering Architectures</div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);font-family:var(--mono);margin-bottom:10px;">· ISCA 2026</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6;">A cycle-accurate simulation and design framework for NeRF rendering SoCs, integrating RISC-V CPU with custom accelerators via HLS. Developed at Georgia Tech EIC Lab.</div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px 24px;">
+        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:8px;">
+          <span style="font-family:var(--mono);font-size:10px;color:var(--accent2);background:var(--accent-dim);border:1px solid rgba(59,130,246,0.3);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;">Co-author</span>
+          <div style="font-size:14px;font-weight:600;color:var(--text);line-height:1.4;">SiliconMind-V1: Multi-Agent Distillation and Debug-Reasoning Workflows for Verilog Generation</div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);font-family:var(--mono);margin-bottom:10px;">· Under Submission</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6;">A multi-agent framework combining distillation and debug-reasoning for scalable, high-quality Verilog code generation from natural language specifications.</div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Contact -->
   <section id="contact">
     <div class="section-header">
       <span class="section-tag">06</span>
@@ -996,7 +1064,7 @@
 
 <footer>
   <div class="container">
-    © 2025 Wei-Po Hsin · Built with HTML/CSS · Deployed on Vercel
+    © 2025 Wei-Po Hsin · Built with HTML/CSS · Deployed on Vercel · Military service completed Jan–Aug 2026
   </div>
 </footer>
 
